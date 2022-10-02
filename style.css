@@ -12,7 +12,7 @@
 /*LOGO & NAVBAR */
 
 header {
-  background-color: darkgray;
+  background: linear-gradient(to bottom, gray, black);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@ header {
 }
 
 .navbar-list li:first-child > a {
-  color: #6091c3;
+  color: #0072bb;
   font-weight: 600;
 }
 .navbar-list a:hover {
@@ -58,19 +58,9 @@ header {
   transition: 1s;
 }
 
-/* MAIN */
+/* SECTION 1 HERO*/
 main {
-  background: #4ecdc4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #556270,
-    #4ecdc4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #556270,
-    #4ecdc4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
@@ -120,8 +110,8 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: #6091c3;
-  background-color: gray;
+  color: #1580eb;
+  background-color: rgb(221, 212, 212);
   width: 120px;
   padding: 8px 0px;
   border-radius: 10px;
@@ -142,7 +132,7 @@ main {
   text-align: center;
 }
 .button-info a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 .hero-card {
@@ -175,4 +165,133 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* SECTION 3 */
+#info {
+  padding: 20px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#info h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+#info h2,
+p {
+  padding: 10px 0;
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* ANIMACION CARDS*/
+
+.info-card i:hover,
+.info-card h3:hover,
+.info-card:hover {
+  width: 350px;
+  height: 300px;
+  background: rgb(0, 0, 0);
+  color: rgb(115, 204, 236);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.info-card {
+  width: 300px;
+  height: 290px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(80, 80, 82);
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.info-card i {
+  color: #0000ff;
+  font-size: 50px;
+}
+
+.info-card h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.info-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: silver;
+}
+
+/* ***FOOTER **/
+footer {
+  background-color: rgb(33, 33, 36);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+footer h2 {
+  padding: 20px 0;
+  font-size: 32px;
+  font-weight: 800;
+}
+.footer-container p {
+  font-size: 14px;
+  font-weight: 300;
+  color: silver;
+}
+.footer-container h3 {
+  gap: 30px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.footer-container p {
+  gap: 20px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.footer-container {
+  padding: 20px 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .ubicacion2 iframe {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+footer .parrafo-footer {
+  color: silver;
+  font-size: 10px;
+}
+
+footer .corazon {
+  color: red;
+  font-size: 15px;
 }
